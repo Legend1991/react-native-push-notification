@@ -573,6 +573,7 @@ public class RNPushNotificationHelper {
         channel.setDescription(this.config.getChannelDescription());
         channel.enableLights(true);
         channel.enableVibration(true);
+        channel.setShowBadge(true);
 
         manager.createNotificationChannel(channel);
         channelCreated = true;
